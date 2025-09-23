@@ -23,6 +23,7 @@ module Spiders '.azure/apps/scrapper/main.bicep' = {
   name: 'spiders-app'
   params: {
     projectName: projectName
+    jobs: jobs
     logfireToken: logfireToken
     twoCaptchaApiKey: twoCaptchaApiKey
     registryPassword: registryPassword
