@@ -1,0 +1,18 @@
+[submodule ".azure"]
+	path = .azure
+	url = https://github.com/TomasCaruso10/.azure.git
+[submodule "metrogas-spider"]
+	path = metrogas-spider
+	url = https://github.com/TomasCaruso10/metrogas-spider.git
+[submodule "aysa-spider"]
+	path = aysa-spider
+	url = https://github.com/TomasCaruso10/aysa-spider.git
+[submodule "edenor-spider"]
+	path = edenor-spider
+	url = https://github.com/TomasCaruso10/edenor-spider.git
+[submodule "edesur-spider"]
+	path = edesur-spider
+	url = https://github.com/TomasCaruso10/edesur-spider.git
+[submodule "matanza-spider"]
+	path = matanza-spider
+	url = https://github.com/TomasCaruso10/matanza-spider.git

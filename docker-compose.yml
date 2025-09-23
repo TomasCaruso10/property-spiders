@@ -1,0 +1,31 @@
+
+services:
+  agip-spider:
+    extends:
+      file: ./agip-spider/docker-compose.yml
+      service: agip-spider
+
+  aysa-spider:
+    extends:
+      file: ./aysa-spider/docker-compose.yml
+      service: aysa-spider
+
+  edenor-spider:
+    extends:
+      file: ./edenor-spider/docker-compose.yml
+      service: edenor-spider
+
+  edesur-spider:
+    extends:
+      file: ./edesur-spider/docker-compose.yml
+      service: edesur-spider
+
+  matanza-spider:
+    extends:
+      file: ./matanza-spider/docker-compose.yml
+      service: matanza-spider
+
+  metrogas-spider:
+    extends:
+      file: ./metrogas-spider/docker-compose.yml
+      service: metrogas-spider

@@ -1,0 +1,43 @@
+
+
+Table Inquilino {
+  _id GUID
+  nombre PrimaryColumn
+  telefono str
+}
+
+Table Propiedad {
+  inquilino Lookup [ref: > Inquilino._id]
+  _id GUID
+  nombre PrimaryColumn
+  n_partida_agip str
+  n_partida_la_matanza str
+  n_cuenta_edenor str
+  n_cuenta_naturgy str
+  n_cliente_metrogas str
+  n_cuenta_aysa str
+  n_cuenta_edesur str
+}
+
+Table Servicios_Propiedad {
+  _id GUIID
+  nombre PrimaryColumn 
+  servicio Lookup [ref: > Servicio._id]
+  propiedad Lookup [ref: > Propiedad._id]
+  tipo Choices [note: "Agip,Aysa,Metrogas,Edenor,Edesur,ABL, Municipalidad la Matanaza"]
+}
+
+Table Servicio {
+  _id GUID
+  nombre PrimaryColumn
+}
+
+
+Table Facturas {
+  _id GUID
+  id PrimaryColumn
+  monto decimal
+  primer_vencimiento datetime
+  segundo_vencimiento datetime
+  servicio_propiedad Lookup [ref: > Servicios_Propiedad._id]
+}
