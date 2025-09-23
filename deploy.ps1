@@ -1,6 +1,6 @@
 Param(
   [string]$ResourceGroup = "propertyManagerAutomation",
-  [string]$ParametersFile = "./appsetings.json",
+  [string]$ParametersFile = "./appsettings.json",
   [switch]$Create
 )
 

@@ -16,3 +16,6 @@
 [submodule "matanza-spider"]
 	path = matanza-spider
 	url = https://github.com/TomasCaruso10/matanza-spider.git
+[submodule "agip-spider"]
+	path = agip-spider
+	url = https://github.com/TomasCaruso10/agip-spider.git
